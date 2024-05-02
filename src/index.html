@@ -5,12 +5,365 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--    <title><%= htmlWebpackPlugin.options.title %></title>-->
+    <!--    <title><%= htmlWebpackPlugin.options.title %></title>-->
     <title>Test app</title>
 </head>
 <body>
-<h1>Hello!</h1>
-<img src="./public/assets/cat.avif" alt="cat">
-<button onclick="console.log('hi')" class="'btn"></button>
+<header class="header">
+    <div class="header__top">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumb__link" href="#">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link breadcrumbs__link--current">TON Development Services</span>
+            </li>
+        </ul>
+    </div>
+    <div class="header__button">
+        <div class="logo">
+            <img src="./public/assets/logo.svg" alt="logo">
+        </div>
+        <nav class="nav">
+            <ul class="nav__tabs">
+                <li class="nav__item">
+                    <button class="nav__btn">Services</button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__btn">Technologies</button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__btn">Products</button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__btn">Success stories</button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__btn">Company</button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__btn">Blog</button>
+                </li>
+            </ul>
+        </nav>
+        <button class="btn">Get in touch</button>
+    </div>
+</header>
+
+<main>
+    <section class="services">
+        <div class="services-info">
+            <h1 class="services-info__title">
+                TON Development Services
+            </h1>
+            <span class="services-info__subtitle">
+            Unleashing scalability and high transaction speed with TON
+        </span>
+            <div class="services-info__content">
+                <p class="services-info__content__text">
+                    PixelPlex offers a full spectrum of TON development services, building scalable cross-chain
+                    applications on top of the TON ecosystem. From creating secure smart contracts to constructing
+                    powerful DeFi solutions, we empower your business to innovate and scale with confidence. We also
+                    offer consulting services, helping you swiftly navigate the TON infrastructure and migrate to the
+                    TON blockchain with ease.
+                </p>
+                <button class="btn">
+                    Contact our team
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="projects-info">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination">1</div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">1</div>
+                <div class="swiper-button-next">2</div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards-info">
+            <div class="cards-info__block">
+                <h2 class="cards-info__title">
+                    Blockchain development insights in our blog
+                </h2>
+                <p class="cards-info__text">
+                    Explore key trends, expert advice, and innovative strategies on blockchain development in our tech
+                    blog, where we delve into the latest advancements and practical applications in the field.
+                </p>
+            </div>
+
+            <div class="cards__list">
+                <article class="cards__item">
+                    <div>
+                        <img src="public/assets/ethereum.jpg" alt="">
+                    </div>
+                    <div class="cards__description">
+                        <span>Blockchain</span>
+                        <h4>Decoding Proto-Danksharding (EIP-4844): How Ethereum Is Overcoming Scalability
+                            Issues</h4>
+                        <div>
+                            <span>10 May, 2021</span>
+                            <span>10 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cards__item">
+                    <div>
+                        <img src="public/assets/ethereum2.jpg" alt="">
+                    </div>
+                    <div class="cards__description">
+                        <span>Blockchain</span>
+                        <h4>What are Zero-Knowledge Rollups?</h4>
+                        <div>
+                            <span>10 May, 2021</span>
+                            <span>10 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cards__item">
+                    <div>
+                        <img src="public/assets/security.jpg" alt="">
+                    </div>
+                    <div class="cards__description">
+                        <span>Blockchain</span>
+                        <h4>The Role of Blockchain in Strengthening Your Cybersecurity: Key Use Cases</h4>
+                        <div>
+                            <span>10 May, 2021</span>
+                            <span>10 min</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <button class="show-articles"></button>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <h2 class="contacts__title">Contact us</h2>
+        <p class="contacts__description">Interested in TON development? Reach out to our team for expert guidance and
+            customized solutions tailored to
+            your business specifics.</p>
+        <form class="contacts__form" action="#">
+            <div class="contacts__form__wrapper">
+                <div class="contacts__form__inner">
+                    <label class="contacts__form__label">
+                        Name
+                        <input class="contacts__form__input">
+                    </label>
+                </div>
+
+                <div class="contacts__form__inner">
+                    <label class="contacts__form__label">
+                        Phone number (optional)
+                        <input class="contacts__form__input" placeholder="e.g. +1 444 123 4567">
+                    </label>
+                </div>
+            </div>
+
+            <div class="contacts__form__wrapper">
+                <div class="contacts__form__inner">
+                    <label class="contacts__form__label">
+                        Company (optional)
+                        <input class="contacts__form__input">
+                    </label>
+                </div>
+
+                <div class="contacts__form__inner">
+                    <label class="contacts__form__label">
+                        Email
+                        <input class="contacts__form__input" placeholder="e.g. name@mail.com">
+                    </label>
+                </div>
+            </div>
+            <div class="contacts__form__inner">
+                <label class="contacts__form__label">
+                    Message
+                    <textarea class="contacts__form__textarea" placeholder="Tell us about your idea..."></textarea>
+                </label>
+
+            </div>
+            <button class="btn">Send message</button>
+            <span>By clicking the 'Send Message' button, you agree that PixelPlex will process your personal information in accordance with our <a
+                    href="#">Privacy Policy</a> and send you marketing materials. You can unsubscribe at any time.</span>
+        </form>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__top">
+        <ul class="countries">
+            <li class="countries--item">
+                <h5 class="countries--title">New York</h5>
+                <span class="countries--address">
+                    520 West 28th St.
+                    Suite 31
+                    New York, NY 10001
+                </span>
+                <a href="tel:821025542120">+82 10 2554-2120</a>
+            </li>
+            <li class="countries--item">
+                <h5 class="countries--title">London</h5>
+                <span class="countries--address">
+                    Kemp House,
+                    152 - 160 City Road
+                    London EC1V 2NX, UK
+                </span>
+                <a href="tel:442045388887">+44 20 4538 8887</a>
+            </li>
+            <li class="countries--item">
+                <h5 class="countries--title">Pfäffikon</h5>
+                <span class="countries--address">
+                    Churerstrasse 54
+                    8808 Pfäffikon
+                    Switzerland
+                </span>
+                <a href="tel:41797310314">+41 79 731-03-14</a>
+            </li>
+            <li class="countries--item">
+                <h5 class="countries--title">Warsaw</h5>
+                <span class="countries--address">
+                    Equator II
+                    Aleje Jerozolimskie 96
+                    Warsaw 00-807, Poland
+                </span>
+                <a href="tel:48730372858">+48 730 372858</a>
+            </li>
+            <li class="countries--item">
+                <h5 class="countries--title">Dubai</h5>
+                <span class="countries--address">
+                    Dubai Silicon Oasis, DDP
+                    Building A2, Unit 101
+                    Dubai, UAE
+                </span>
+                <a href="tel:971585788150">+971 58 5788150</a>
+            </li>
+            <li class="countries--item">
+                <h5 class="countries--title">Tokyo</h5>
+                <span class="countries--address">
+                    3-1-30 Avex Building 2F avex EYE
+                    Minami-Aoyama, Minato-ku
+                    Tokyo 107-8577, Japan
+                </span>
+                <a href="tel:819075407726">+81 90 7540-7726</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__button">
+        <div class="additional-info">
+            <div class="additional-info__logo">
+                <img src="public/assets/logo.svg" alt="logo">
+            </div>
+
+            <div class="additional-info--block">
+                <div class="additional-info--widget">
+                    <img src="public/assets/widget.svg" alt="logo">
+                </div>
+                <div class="social-network">
+                    <svg height="20" width="11">
+                        <use xlink:href="public/icons.svg#facebook"></use>
+                    </svg>
+
+                    <svg height="19" width="20">
+                        <use xlink:href="public/icons.svg#linkedin"></use>
+                    </svg>
+
+                    <svg height="18" width="20">
+                        <use xlink:href="public/icons.svg#x"></use>
+                    </svg>
+
+                    <svg height="18" width="24">
+                        <use xlink:href="public/icons.svg#youtube"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="additional-info__links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Sitemap</a>
+            </div>
+
+            <span class="additional-info__copyright">
+               ©  2022  PixelPlex. All Rights Reserved.
+           </span>
+        </div>
+
+        <div class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#">Blockchain Consulting</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Blockchain Development</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Tokenization</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Mobile App Development</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Web Development </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Web Accessibility</a>
+                </li>
+            </ul>
+
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#">Blockchain</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Artificial Intelligence</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Internet of Things</a>
+                </li>
+            </ul>
+
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#">About us</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Team</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Careers</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">News</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

@@ -311,7 +311,10 @@
   &__form__wrapper {
     max-width: 620px;
     width: 100%;
-    margin-right: 40px;
+
+    &:nth-child(:last-child) {
+      margin-right: 40px;
+    }
 
     .contacts__form__input {
       padding: 14.5px 16px;

@@ -13139,6 +13139,8 @@ body {
 .contacts__form__wrapper {
   max-width: 620px;
   width: 100%;
+}
+.contacts__form__wrapper:nth-child(:last-child) {
   margin-right: 40px;
 }
 .contacts__form__wrapper .contacts__form__input {

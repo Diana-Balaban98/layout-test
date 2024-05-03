@@ -29,7 +29,7 @@ const devServer = (isDev: EnvVariables): { devServer: DevServerConfiguration } =
 
 export default (env: EnvVariables) => {
     const config: webpack.Configuration = {
-        entry: path.resolve(__dirname, 'src', 'index.utils'),
+        entry: path.resolve(__dirname, 'src', 'index.ts'),
         mode: env.mode === 'development' ? "development" : "production",
         output: {
             path: path.resolve(__dirname, 'dist'),
@@ -41,7 +41,7 @@ export default (env: EnvVariables) => {
             rules: [
                 {
                     test: /\.[tj]s$/,
-                    use: 'utils-loader',
+                    use: 'ts-loader',
                     exclude: /node_modules/,
                 },
                 {
@@ -74,7 +74,7 @@ export default (env: EnvVariables) => {
             ],
         },
         resolve: {
-            extensions: ['.utils', '.js'],
+            extensions: ['.ts', '.js'],
         },
         performance: {
             hints: false,

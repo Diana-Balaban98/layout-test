@@ -4,9 +4,9 @@ import "swiper/swiper-bundle.css"
 import './styles/boilerplate.less'
 import './styles/main.less'
 import 'intl-tel-input/build/css/intlTelInput.css';
-import * as intlTel from "./utils/intl-tel-input";
-import {showAllCards, showMoreArticles} from "./utils/showHiddenCards";
-import {moveArrows} from "./utils/swiper";
+import * as intlTel from "./ts/intl-tel-input";
+import {showAllCards, showMoreArticles} from "./ts/showHiddenCards";
+import {moveArrows} from "./ts/swiper";
 
 const input = document.querySelector("#phone");
 const swiperButtonNext = document.querySelector(".swiper-button-next");

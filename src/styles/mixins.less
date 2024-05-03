@@ -1,0 +1,21 @@
+.arrow-icon(@path, @width: 0, @height: 0, @right: none) {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: @right;
+  transform: translateY(-50%);
+  width: @width;
+  height: @height;
+  background-image: url(@path);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.set-padding(@top, @right: auto, @bottom: auto, @left: auto) {
+  padding: @top @right @bottom @left;
+}
+
+.set-font(@font-size, @font-weight: 400) {
+  font-size: @font-size;
+  font-weight: @font-weight;
+}

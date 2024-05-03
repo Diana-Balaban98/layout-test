@@ -1,30 +1,28 @@
 import './index.html'
-import './main.less'
-import Swiper from "swiper";
-import "swiper/css"
+import "bootstrap/dist/css/bootstrap.css";
+import "swiper/swiper-bundle.css"
+import './styles/boilerplate.less'
+import './styles/main.less'
+import 'intl-tel-input/build/css/intlTelInput.css';
+import * as intlTel from "./utils/intl-tel-input";
+import {showAllCards, showMoreArticles} from "./utils/showHiddenCards";
+import {moveArrows} from "./utils/swiper";
+
+const input = document.querySelector("#phone");
+const swiperButtonNext = document.querySelector(".swiper-button-next");
+const swiperButtonPrev = document.querySelector(".swiper-button-prev");
+
+moveArrows(swiperButtonNext, "next");
+moveArrows(swiperButtonPrev, "prev");
+
+intlTel.identifyPhone(input);
+
+showAllCards();
+showMoreArticles();
 
 
-export const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
 
 
 

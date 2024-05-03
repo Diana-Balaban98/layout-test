@@ -3,7 +3,7 @@ import webpack from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import CopyPlugin from "copy-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import type { Configuration as DevServerConfiguration } from "webpack-dev-server";
+import type {Configuration as DevServerConfiguration} from "webpack-dev-server";
 import {CleanWebpackPlugin} from "clean-webpack-plugin";
 
 type Mode = "development" | "production";
@@ -13,7 +13,7 @@ type EnvVariables = {
     port: number
 }
 
-const devServer = (isDev: EnvVariables): {devServer: DevServerConfiguration} => {
+const devServer = (isDev: EnvVariables): { devServer: DevServerConfiguration } => {
     return isDev.mode && {
         devServer: {
             open: true,
@@ -29,7 +29,7 @@ const devServer = (isDev: EnvVariables): {devServer: DevServerConfiguration} => 
 
 export default (env: EnvVariables) => {
     const config: webpack.Configuration = {
-        entry: path.resolve(__dirname, 'src', 'index.ts'),
+        entry: path.resolve(__dirname, 'src', 'index.utils'),
         mode: env.mode === 'development' ? "development" : "production",
         output: {
             path: path.resolve(__dirname, 'dist'),
@@ -41,7 +41,7 @@ export default (env: EnvVariables) => {
             rules: [
                 {
                     test: /\.[tj]s$/,
-                    use: 'ts-loader',
+                    use: 'utils-loader',
                     exclude: /node_modules/,
                 },
                 {
@@ -70,11 +70,11 @@ export default (env: EnvVariables) => {
                         "css-loader",
                         "less-loader",
                     ],
-                },
+                }
             ],
         },
         resolve: {
-            extensions: ['.ts', '.js'],
+            extensions: ['.utils', '.js'],
         },
         performance: {
             hints: false,

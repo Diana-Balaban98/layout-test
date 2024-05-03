@@ -226,6 +226,20 @@
   dependencies:
     "@types/node" "*"
 
+"@types/intl-tel-input@^18.1.4":
+  version "18.1.4"
+  resolved "https://registry.yarnpkg.com/@types/intl-tel-input/-/intl-tel-input-18.1.4.tgz#0eb5211a7490f8a8d7aa940ee594a85138d514c9"
+  integrity sha512-UT4dQ4dQA0w0uxU161aPROEEwMOQj5Qedm3ImdDNfkxi3JXzBX2FhcUS72pTyZ8ypaUr2e9ruJBiK6bwSGfbew==
+  dependencies:
+    "@types/jquery" "*"
+
+"@types/jquery@*":
+  version "3.5.29"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.29.tgz#3c06a1f519cd5fc3a7a108971436c00685b5dcea"
+  integrity sha512-oXQQC9X9MOPRrMhPHHOsXqeQDnWeCDT3PelUIg/Oy8FAbzSZtFHRjc7IpbfFVmpLtJ+UOoywpRsuO5Jxjybyeg==
+  dependencies:
+    "@types/sizzle" "*"
+
 "@types/json-schema@*", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   version "7.0.15"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
@@ -293,6 +307,11 @@
     "@types/http-errors" "*"
     "@types/node" "*"
     "@types/send" "*"
+
+"@types/sizzle@*":
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.8.tgz#518609aefb797da19bf222feb199e8f653ff7627"
+  integrity sha512-0vWLNK2D5MT9dg0iOo8GlKguPAU02QjmZitPEsXRuJXU/OGIOt9vT9Fc26wtYuavLxtO45v9PGleoL9Z0k1LHg==
 
 "@types/sockjs@^0.3.36":
   version "0.3.36"
@@ -634,6 +653,11 @@ boolbase@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
+
+bootstrap@5.3.3:
+  version "5.3.3"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.3.tgz#de35e1a765c897ac940021900fcbb831602bac38"
+  integrity sha512-8HLCdWgyoMguSO9o+aH+iuZ+aht+mzW0u3HIMzVu7Srrpv7EBBxTnrFlSCskwdY1+EOFQSm7uMJhNQHkdPcmjg==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -1666,6 +1690,11 @@ interpret@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-3.1.1.tgz#5be0ceed67ca79c6c4bc5cf0d7ee843dcea110c4"
   integrity sha512-6xwYfHbajpoF0xLW+iwLkhwgvLoZDfjYfoFNu8ftMoXINzwuymNLd9u/KmwtdT2GbR+/Cz66otEGEVVUHX9QLQ==
+
+intl-tel-input@^22.0.2:
+  version "22.0.2"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-22.0.2.tgz#4d5eb9d9ebc9d1a4fa537c7b17567569b851edf1"
+  integrity sha512-FYDLp56aCVE+G7TJGmKCeU8LlfSztINiv54TALquMhMJumlUP1d48I6fEssbcq325vcXOrqdOO7Bbi1U/WRCcw==
 
 ipaddr.js@1.9.1:
   version "1.9.1"
